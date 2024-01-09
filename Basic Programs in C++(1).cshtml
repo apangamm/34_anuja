@@ -1,0 +1,29 @@
+﻿// To Calculate the angle between hour hand and minute hand And check whether highest angle or not.
+#include<iostream>
+
+int main() {
+   int h;
+   int m;double ma;double ha;double angle;
+   std::cout<<"Enter Hour:";
+   std::cin>>h;
+   std::cout<<"Enter Minute:";
+   std::cin>>m;
+   ha=h*30+m*0.5;
+   ma=m*6;
+   if(h>m)
+   {
+       angle=h-m;
+      
+   }
+   else
+   {
+       angle=m-h;
+   }
+   if (angle>180)
+   { std::cout<<"It is a greatest angle ";
+   }
+   else{
+       std::cout<<"It is a smallest angle";
+   }
+    return 0;
+}
